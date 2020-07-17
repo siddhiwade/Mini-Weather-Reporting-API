@@ -1,0 +1,49 @@
+<style>
+  table,th,td{
+    border:2px solid black;
+    border-collapse: collapse;
+  }
+  </style>
+
+<table style="width:25%">
+  <tr>
+    <td>City</td>
+    <td>{{name}}</td>
+  </tr>
+  <tr>
+    <td>Weather</td>
+    {{#each weather}}
+    <td>{{this.main}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <td>Description</td>
+    {{#each weather}}
+    <td>{{this.description}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <td>Current Tempreature</td>
+    <td>{{main.temp}}</td>
+  </tr>
+  <tr>
+    <td>Max Tempreature</td>
+    <td>{{main.temp_max}}</td>
+  </tr>
+  <tr>
+    <td>Min Tempreature</td>
+    <td>{{main.temp_min}}</td>
+  </tr>
+  <tr>
+    <td>Pressure</td>
+    <td>{{main.pressure}}</td>
+  </tr>
+  <tr>
+    <td>Humidity</td>
+    <td>{{main.humidity}}</td>
+  </tr>
+  <tr>
+    <td>Visibility</td>
+    <td>{{visibility}}</td>
+  </tr>
+</table>
